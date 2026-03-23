@@ -1,3 +1,36 @@
-.custom-navbar {
-    background-color: brown !important;
+nav img {
+    width: 60px;   /* sets the width */
+    height: 63px;  /* sets the height */
+    top: 10px;
+    left: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 80px;
+
+}
+
+
+.home-title {
+    color: #000000;
+    font-weight: bold;
+    font-family: 
+    
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+
+body {
+  background-color: #f4e9d8;
 }

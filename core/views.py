@@ -15,6 +15,11 @@ def login_view(request):
             return redirect('home')
         else:
             error = "Invalid username or password"
-            return render(request, 'login.html', {'error': error})
+            return render(request, 'login.html', {
+                'error': error,
+                'hide_navbar': True
+            })
 
-    return render(request, 'login.html')
+    return render(request, 'login.html', {
+        'hide_navbar': True
+    })
