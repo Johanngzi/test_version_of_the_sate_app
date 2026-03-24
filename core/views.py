@@ -23,3 +23,10 @@ def login_view(request):
     return render(request, 'login.html', {
         'hide_navbar': True
     })
+
+def results_view(request):
+    return render(request, 'results.html')
+
+
+def competitions_view(request):
+    return render(request, 'competitions.html')

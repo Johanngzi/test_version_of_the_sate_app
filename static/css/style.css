@@ -22,15 +22,62 @@ nav {
 .home-title {
     color: #000000;
     font-weight: bold;
-    font-family: 
-    
     font-size: 36px;
     text-align: center;
     margin-top: 30px;
     text-decoration: underline;
 }
 
+.home-subtitle {
+     color: #000000;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+
 
 body {
   background-color: #f4e9d8;
+}
+
+
+.btn-red {
+  /* Overriding Bootstrap's CSS variables */
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.75rem;
+  --bs-btn-font-weight: 600;
+  --bs-btn-border-radius: 0.25rem;
+
+  /* State: Normal */
+  --bs-btn-color: #0f0d0d;
+  --bs-btn-bg: #C4452D;
+  --bs-btn-border-color: #4a2e1f;
+
+  /* State: Hover */
+  --bs-btn-hover-color: #f00fac;
+  --bs-btn-hover-bg: #941777;
+  --bs-btn-hover-border-color: #3a2317;
+
+  /* State: Focus/Active */
+  --bs-btn-focus-shadow-rgb: 74, 46, 31;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #2c1a11;
+  --bs-btn-active-border-color: #2c1a11;
+}
+
+.footer {
+  background-color: #4a2e1f; /* same as navbar */
+}
+
+.footer a:hover {
+  color: #C4452D; /* your red button color for hover effect */
+  text-decoration: none;
+}
+
+.footer-social i {
+  font-size: 1.2rem;
 }
