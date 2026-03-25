@@ -21,7 +21,8 @@ def login_view(request):
             })
 
     return render(request, 'login.html', {
-        'hide_navbar': True
+        'hide_navbar': True,
+        'hide_footer': True
     })
 
 def results_view(request):

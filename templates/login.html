@@ -1,31 +1,37 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Login{% endblock %}
 
 {% block content %}
-<div class="body container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
-    <div class="card p-4 shadow-sm" style="max-width: 400px; width: 100%;">
-        <h2 class="text-center mb-4">Login</h2>
+<div class="body d-flex flex-column justify-content-center align-items-center" style="min-height: 80vh;">
+    
+    <div class="login-logo mb-4">
+        <img src="{% static 'images/logo_dark.png' %}" alt="Sate App Logo">
+    </div>
+
+    <div class="card login-form-size">
+        <h2 class="text-center mb-4"></h2>
 
         <form method="POST">
             {% csrf_token %}
             
             <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
+                <label for="username" class="loginpage-subtitle">Gebruikersnaam</label>
                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
             </div>
             
             <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
+                <label for="password" class="loginpage-subtitle">Wachtwoord</label>
                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
             </div>
             
-            <button type="submit" class="btn btn-primary w-100">Login</button>
+            <button type="submit" class="btn btn-red-login-page">Inloggen</button>
+            <button type="submit" class="btn btn-red-login-page">Inloggen</button>
+            <button type="submit" class="btn btn-red-login-page">Inloggen</button>
         </form>
 
-        <p class="text-center mt-3">
-            Don't have an account? <a href="#">Sign up</a>
-        </p>
     </div>
+
 </div>
 {% endblock %}
