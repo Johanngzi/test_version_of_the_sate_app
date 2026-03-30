@@ -1,0 +1,57 @@
+.btn-app {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.btn-app--primary {
+  background-color: #C4452D;
+  color: #ffffff;
+  border-color: #4a2e1f;
+}
+
+.btn-app--primary:hover {
+  background-color: #941777;
+  color: #f00fac;
+  border-color: #3a2317;
+}
+
+.btn-app--primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(74, 46, 31, 0.25);
+}
+
+.btn-app--primary:active {
+  background-color: #2c1a11;
+  color: #ffffff;
+  border-color: #2c1a11;
+}
+
+.btn-app--block {
+  width: 100%;
+}
+
+.btn-app-login-size {
+  width: 96px;
+  height: 38px;
+}
+
+.btn-app-signup-size {
+  width: 91px;
+  height: 38px;
+}
+.btn-app-admin-size {
+  width: 229px;
+  height: 38px;
+}
+
+
+
+.gap-10 {
+  gap: 10px;
+}

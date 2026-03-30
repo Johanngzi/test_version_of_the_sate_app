@@ -11,26 +11,33 @@
     </div>
 
     <div class="card login-form-size">
-        <h2 class="text-center mb-4"></h2>
-
         <form method="POST">
             {% csrf_token %}
             
-            <div class="mb-3">
+            <div class="username-password-size">
                 <label for="username" class="loginpage-subtitle">Gebruikersnaam</label>
                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
             </div>
             
-            <div class="mb-3">
+            <div class="username-password-size">
                 <label for="password" class="loginpage-subtitle">Wachtwoord</label>
                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
             </div>
-            
-            <button type="submit" class="btn btn-red-login-page">Inloggen</button>
-            <button type="submit" class="btn btn-red-login-page">Inloggen</button>
-            <button type="submit" class="btn btn-red-login-page">Inloggen</button>
+         
+       
+            <div class="d-flex flex-row gap-10">
+                {% include "components/button.html" with type="submit" label="Inloggen" variant="primary" class="btn-app-login-size"%}
+                {% include "components/button.html" with href="/signup/" label="Sign up" variant="primary" class="btn-app-signup-size" %}
+            </div>
+            <div class="mt-3">
+                {% include "components/button.html" with href="/admin-login/" label="(temp) Inloggen als admin" variant="primary" class="btn-app-admin-size" %}                
+            </div>
         </form>
 
+    </div>
+
+     <div class="login-logo-company mb-4">
+        <img src="{% static 'images/logo_2testit.png' %}" alt="Company Logo">
     </div>
 
 </div>
