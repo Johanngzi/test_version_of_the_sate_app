@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Competitions users page{% endblock %}
+
+{% block content %}
+<div class="competitions-page">
+
+  <h1 class="home-title">Actieve competitie</h1>
+
+  {% include "components/competition_item.html" with title="Competitie 2006" button_label="Naar competitie" %}
+
+  <h1 class="home-title">Verlopen competities</h1>
+
+  <div class="past-competitions-list">
+    {% include "components/competition_item.html" with title="Competitie 2004" subtitle="Beste saté" button_label="Resultaten" %}
+    {% include "components/competition_item.html" with title="Competitie 2005" subtitle="Beste saté" button_label="Resultaten" %}
+  </div>
+
+</div>
+{% endblock %}

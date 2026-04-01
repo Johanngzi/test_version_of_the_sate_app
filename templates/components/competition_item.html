@@ -1,0 +1,15 @@
+{# templates/components/competition_item.html #}
+<div class="competition-item">
+  <div class="competition-item__content">
+    
+    <div class="competition-item__text">
+      <h2 class="home-subtitle">{{ title }}</h2>
+      {% if subtitle %}
+        <p class="competition-meta">{{ subtitle }}</p>
+      {% endif %}
+    </div>
+
+    {% include "components/button.html" with label=button_label variant="primary" size_class="btn-app-admin-size" only %}
+    
+  </div>
+</div>

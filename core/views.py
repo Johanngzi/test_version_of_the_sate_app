@@ -31,3 +31,6 @@ def results_view(request):
 
 def competitions_view(request):
     return render(request, 'competitions.html')
+
+def competitions_users_page_view(request):
+    return render(request, 'competitions-users-page.html')
