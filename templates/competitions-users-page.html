@@ -5,16 +5,39 @@
 
 {% block content %}
 <div class="competitions-page">
-
   <h1 class="home-title">Actieve competitie</h1>
 
-  {% include "components/competition_item.html" with title="Competitie 2006" button_label="Naar competitie" %}
+  <div class="active-competitions-list">
+    {% include "components/competition_item.html" with title="Competitie 2006" button_label="Naar competitie" %}
 
-  <h1 class="home-title">Verlopen competities</h1>
+  </div>
+
+
+  <h1 class="home-title mt-5">Verlopen competities</h1>
 
   <div class="past-competitions-list">
-    {% include "components/competition_item.html" with title="Competitie 2004" subtitle="Beste saté" button_label="Resultaten" %}
-    {% include "components/competition_item.html" with title="Competitie 2005" subtitle="Beste saté" button_label="Resultaten" %}
+
+   <div class="competition-content">
+    {% include "components/competition_item.html" with title="Competitie 2004" subtitle="Beste saté" button_label=None title_class="home-subtitle--sm"%}
+
+     <div class="divider">
+       Bekijk competitie
+      </div>
+      <a href="/competitions" class="arrow-competitions">→</a>
+
+   </div>
+
+   <div class="competition-content">
+     {% include "components/competition_item.html" with title="Competitie 2005" subtitle="Beste saté" title_class="home-subtitle--sm"%}
+
+     <div class="divider">
+       Bekijk competitie
+     </div>
+     <a href="/competitions" class="arrow-competitions">→</a>
+
+   </div>
+
+
   </div>
 
 </div>

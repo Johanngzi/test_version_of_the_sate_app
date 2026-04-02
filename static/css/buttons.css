@@ -50,7 +50,10 @@
   height: 38px;
 }
 
-
+.btn-app-competitions-users-page-tocompetition-size {
+  width: 150px;
+  height: 38px;
+}
 
 .gap-10 {
   gap: 10px;
